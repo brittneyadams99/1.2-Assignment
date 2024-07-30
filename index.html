@@ -31,30 +31,28 @@
 
 <h2>User Information Form</h2>
 <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
-	<label for="full-name">Full Name (First and Last):</label>
-	<input type="text" id="full-name" name="full_name" required>
+	<label for="full-name">Full Name (First and Last)<span style="color: red">*</span></label>
+	<input type="text" id="full-name" name="full_name" aria-required="true" required>
 	<br><br>
 
-	<label for="email">Email Address:</label>
-	<input type="email" id="email" name="email" required>
+	<label for="email">Email Address:<span style="color: red">*</span></label>
+	<input type="email" id="email" name="email" aria-required="true" required>
 	<br><br>
 
-	<label for="phone">Phone Number:</label>
-	<input type="tel" id="phone" name="phone" required>
+	<label for="phone">Phone Number:<span style="color: red">*</span></label>
+	<input type="tel" id="phone" name="phone" aria-required="true" required>
 	<br><br>
 
 	<fieldset>
-		<legend class="required-label">Preferred Contact Method</legend>
-		  <input id="contact_method_email" type="radio" name="contact_method_email" value="email">
-		  <label for="contact_method_email">Email</label>
-	  
-	   
-		  <input id="contact_method_phone" type="radio" name="contact_method_phone" value="phone">
-		  <label for="contact_method_phone">Phone</label>
-	  </fieldset>
+		<legend>Preferred Contact Method<span style="color: red">*</span></legend>
+			<input id="contact_method_email" type="radio" name="contact_method" value="email" required>
+			<label for="contact_method_email">Email</label>
+		<input id="contact_method_phone" type="radio" name="contact_method" value="phone" required>
+		<label for="contact_method_phone">Phone</label>
+	</fieldset>
 	<br>
 
-	<label for="state">State of Residence:</label>
+	<label for="state">State of Residence:<span style="color: red">*</span></label>
 	<select id="state" name="state" required>
 		<option value="" disabled selected>Select your state</option>
 		<option value="AL">Alabama</option>
