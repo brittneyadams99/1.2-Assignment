@@ -42,10 +42,10 @@
 	<br><br>
 
 	<fieldset>
-		<label for="contact_method">Preferred Contact Method<span style="color: red">*</span></label>
-			<input id="contact_method_email" type="radio" name="contact_method" value="email">
-			<label for="contact_method_email">Email</label>
-		<input id="contact_method_phone" type="radio" name="contact_method" value="phone">
+		<legend class="required-label">Preferred Contact Method<span style="color: red">*</span></legend>
+		<input id="contact_method_email" type="radio" name="contact_method_email" value="email" required>
+		<label for="contact_method_email">Email</label>
+		<input id="contact_method_phone" type="radio" name="contact_method_phone" value="phone" required>
 		<label for="contact_method_phone">Phone</label>
 	</fieldset>
 	<br>
